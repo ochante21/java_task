@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navegacion{
+    height: 5rem;
+    border: 2px solid black;
+    background-color: rgb(96, 235, 212);
+
+}
+#navbarNav{
+    justify-content: end;
+}
+.nav-item{
+    margin: 5px;
+    /* width: 8rem; */
+}
+
+.portada{
+    font-size: 2rem;
+    height: 6rem;
+    background-color: rgb(55, 111, 214);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion1{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+.filtros{
+    margin: 0 1vw 0 1vw;
+    align-self: center;
+    border: 2px solid black;
+
+}
+.formulario{ 
+    margin: 0;
+    width: 18rem;
+    border: 2px solid black;  
+}
