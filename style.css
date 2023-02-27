@@ -57,11 +57,19 @@
     margin: 1vh;
 }
 .carta{
+    height: 10rem;
+    object-fit: cover;
     margin: 1vh 1vw 1vh 1vw;
 }
 .boton_precio{
     display: flex;
     justify-content: space-between;
+}
+
+.img_card{
+    height:15rem ;
+    width: 20rem;
+    object-fit: cover;
 }
 
 footer{
