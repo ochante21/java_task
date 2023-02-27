@@ -6,7 +6,7 @@
 
 .navegacion{
     height: 5rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: rgb(96, 235, 212);
 
 }
@@ -73,7 +73,7 @@
 }
 
 footer{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: rgb(55, 111, 214); 
     padding: 1vh 2vw 1vh 2vw;
     display: flex;
