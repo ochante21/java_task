@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .navegacion{
     height: 5rem;
     /* border: 2px solid black; */
@@ -64,8 +68,8 @@
 .boton_precio{
     display: flex;
     justify-content: space-between;
+    vertical-align: top;
 }
-
 .img_card{
     height:15rem ;
     width: 20rem;
@@ -78,6 +82,7 @@ footer{
     padding: 1vh 2vw 1vh 2vw;
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
 }
 .redes{
     border-radius: 20px;

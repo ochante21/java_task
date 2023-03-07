@@ -24,7 +24,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active btn btn-primary btn-lg" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-link active btn btn-primary btn-lg" aria-current="page"
+                                href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn btn-primary btn-sm" href="./upcoming_events.html">Upcomig Events</a>
@@ -46,57 +47,44 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="portada"><span>Home</span> </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="portada"><span>Upcoming Events</span> </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="portada"><span>Past Events</span> </div>
-                </div>
-                <div class="carousel-item">
                     <div class="portada"><span>Contact</span> </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="portada"><span>Stats</span> </div>
-                </div>
+                <a href="./past_events.html" class="carousel-control-prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="./stats.html" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </header>
 
     <main>
         <div class="form_contact">
-            <form >
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        
+
 
 
     </main>
 
-    <footer class="fixed-bottom">
+    <footer>
         <div>
             <a class="navbar-brand" href="#">
                 <img class="redes" src="./assets/logo/icono_facebook.png" alt="Bootstrap" width="40" height="40">

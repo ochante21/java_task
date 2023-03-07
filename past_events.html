@@ -47,75 +47,83 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="portada"><span>Home</span> </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="portada"><span>Upcoming Events</span> </div>
-                </div>
-                <div class="carousel-item">
                     <div class="portada"><span>Past Events</span> </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="portada"><span>Contact</span> </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="portada"><span>Stats</span> </div>
-                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <a href="./upcoming_events.html" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="./contact.html" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
     </header>
 
     <main>
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="img_card col-md-4">
-                    <img src="./assets/imagenes/Music_Concert.jpg" class="img-fluid rounded-start img_card" alt="jugador1">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem atque,
-                            natus voluptas molestiae error facilis deserunt assumenda libero eveniet expedita tenetur
-                            iusto quis dignissimos quasi aut temporibus sequi odio magni. Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Odit, obcaecati. Mollitia magni excepturi itaque distinctio
-                            unde sapiente pariatur eos provident! Repellendus unde blanditiis repellat repudiandae,
-                            officia ab quas voluptas laborum. This is a wider card with supporting text below as a
-                            natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
+        <div class="seccion1">
+            <div class="filtros">
+                <form>
+                    <label>
+                        <input type="checkbox" value="option1">
+                        Check 1
+                    </label>
+                    <label>
+                        <input type="checkbox" value="option1">
+                        Check 2
+                    </label>
+                    <label>
+                        <input type="checkbox" value="option1">
+                        Check 3
+                    </label>
+                    <label>
+                        <input type="checkbox" value="option1">
+                        Check 4
+                    </label>
+                </form>
             </div>
+
+
+            <div class="formulario container-fluid ">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+
         </div>
+
+        <div id="eventos_pasados" class="contenedor_cartas">
+
+
+        </div>
+
 
     </main>
 
-    <footer class="fixed-bottom">
+    <footer >
         <div>
-            <a class="navbar-brand" href="#">
-                <img class="redes" src="./assets/logo/icono_facebook.png" alt="Bootstrap" width="40" height="40">
-            </a>
-            <a class="navbar-brand" href="#">
-                <img class="redes" src="./assets/logo/icono_instagram.png" alt="Bootstrap" width="40" height="40">
-            </a>
-            <a class="navbar-brand" href="#">
-                <img class="redes" src="./assets/logo/icono_whatsapp.png" alt="Bootstrap" width="40" height="40">
-            </a>
+          <a class="navbar-brand" href="#">
+            <img class="redes" src="./assets/logo/icono_facebook.png" alt="Bootstrap" width="40" height="40">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img class="redes" src="./assets/logo/icono_instagram.png" alt="Bootstrap" width="40" height="40">
+          </a>
+          <a class="navbar-brand" href="#">
+            <img class="redes" src="./assets/logo/icono_whatsapp.png" alt="Bootstrap" width="40" height="40">
+          </a>
         </div>
-
+    
         <h3>COHORT</h3>
-
-    </footer>
+    
+    
+      </footer>
 
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script src="./current_date.js"></script>
+    <script src="./past_events.js"></script>
 </body>
