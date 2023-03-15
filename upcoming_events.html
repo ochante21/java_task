@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active btn btn-primary btn-lg" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link  btn btn-primary btn-lg" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn btn-primary btn-sm" href="#">Upcomig Events</a>
+              <a class="nav-link active btn btn-primary btn-sm" href="#">Upcomig Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link btn btn-primary" href="./past_events.html">Past Events</a>
@@ -61,22 +61,10 @@
   <main>
     <div class="seccion1">
       <div class="filtros">
-        <form>
-          <label>
-            <input type="checkbox" value="option1" >
-            Check 1
-          </label>
-          <label>
-            <input type="checkbox" value="option1">
-            Check 2
-          </label>
-          <label>
-            <input type="checkbox" value="option1">
-            Check 3
-          </label>
-          <label>
-            <input type="checkbox" value="option1">
-            Check 4
+        <form id="form_filtros">
+          <label class="label1">
+            <input type="checkbox" value="filtrando"  class="filtro1" id="filtro1">
+            todos
           </label>
         </form>
       </div>
@@ -84,14 +72,14 @@
 
       <div class="formulario container-fluid ">
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control me-2 input" type="search" placeholder="Search" aria-label="Search">
+          <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
         </form>
       </div>
 
     </div>
 
-    <div id="eventos_actuales" class="contenedor_cartas">
+    <div id="contenedor_cartas">
       
 
     </div>

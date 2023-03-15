@@ -12,7 +12,6 @@ body{
     height: 5rem;
     /* border: 2px solid black; */
     background-color: rgb(96, 235, 212);
-
 }
 #navbarNav{
     justify-content: end;
@@ -32,25 +31,25 @@ body{
 }
 
 .seccion1{
+    margin-top: 1vh;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     justify-content: space-between;
 }
 .filtros{
     margin: 0 1vw 0 1vw;
-    align-self: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 
 }
 .formulario{ 
     margin: 0;
     width: 18rem;
-    border: 2px solid black;  
+    /* border: 2px solid black;   */
 }
 
-.contenedor_cartas{
-    border: 2px solid black;
+#contenedor_cartas{
+    /* border: 2px solid black; */
     padding: 1vh;
     display: flex;
     justify-content: space-evenly;
@@ -71,8 +70,7 @@ body{
     vertical-align: top;
 }
 .img_card{
-    height:15rem ;
-    width: 20rem;
+    height: 100%; 
     object-fit: cover;
 }
 
