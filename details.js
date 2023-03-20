@@ -1,4 +1,13 @@
-const eventos = data["events"];
+//const eventos = data["events"];
+//asincronismo
+let eventos
+fetch('https://mindhub-xj03.onrender.com/api/amazing')
+.then((respuesta)=> respuesta.json() )
+.then((datos)=>{
+  console.log(datos.events);
+  eventos = datos.events;
+
+  
 
 const containerDetails = document.getElementById("container_cards")
 
@@ -7,7 +16,7 @@ const querySearch = window.location.search
 const param = new URLSearchParams(querySearch).get("id")
 
 
-const carta = eventos.find(lugar => lugar.id == param);
+const carta = eventos.find(lugar => lugar._id == param);
 
 containerDetails.innerHTML= `
 <div class="row g-0">
@@ -26,6 +35,16 @@ containerDetails.innerHTML= `
               </div>
             </div>
 `;
+
+
+
+
+
+  
+})
+.catch((error)=> console.log("error al cargar"));
+
+
 
 // "capacity":30000,
 //         "assistance":25698,

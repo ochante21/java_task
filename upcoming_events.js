@@ -1,6 +1,25 @@
 
-let eventos = data["events"];
-let eventos_recientes = filtrar_eventosRecientes(eventos);
+//let eventos = data["events"];
+let fecha_actual;
+let eventos
+let eventos_recientes
+//asincronismo
+const obtener_eventos = async () => {
+  try {
+    const repuesta = await fetch('https://mindhub-xj03.onrender.com/api/amazing');
+    let datos = await repuesta.json();
+    eventos = datos.events;
+    fecha_actual = datos.currentDate;
+    eventos_recientes = filtrar_eventosRecientes(eventos);
+    crear_cartas(eventos_recientes);
+crear_checkboxes(eventos_recientes);
+    console.log(eventos_recientes);
+  }
+  catch (error) {
+    console.log("error al cargar");
+  }
+}
+
 
 //DOM
 const contenedor_cartas = document.getElementById("contenedor_cartas");
@@ -20,12 +39,8 @@ function filtro_final(){
 }
 
 function filtrar_eventosRecientes(eventos_array) {
-  let eventos_pasados = eventos_array.filter(element =>element["date"] >= "2021-12-12");
+  let eventos_pasados = eventos_array.filter(element =>element["date"] >= fecha_actual);
   return eventos_pasados;
-    /*else if (element["date"] >= "2021-12-12") {
-      eventos_recientes.push(element);
-    }*/
-  
 }
 
 function crear_cartas(eventos_array) {
@@ -98,5 +113,4 @@ function filtrar_porCategoria(eventos_array){
 }
 
 //llamar funciones
-crear_cartas(eventos_recientes);
-crear_checkboxes(eventos_recientes);
+obtener_eventos();
