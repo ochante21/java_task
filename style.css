@@ -95,3 +95,10 @@ footer{
 .tablas{
     margin: 2vh;
 }
+th{
+    background-color: rgb(55, 111, 214) !important; 
+}
+.encabezado{
+    color: rgb(55, 111, 214);
+    font-weight: bolder;
+}

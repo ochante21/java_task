@@ -62,7 +62,7 @@ function crear_cartas(eventos_array) {
         </div>
         <div class="boton_precio card-body">
           <span>$ ${element["price"]} </span>
-          <a href="./details.html?id=${element["id"]}" class="btn btn-primary ">Ver mas</a>
+          <a href="./details.html?id=${element["_id"]}" class="btn btn-primary ">Ver mas</a>
         </div>
       </div>
       `;

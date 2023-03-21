@@ -55,7 +55,7 @@ function crear_cartas(eventos_array) {
   eventos_array.forEach(element => {
     cartas += `
         <div class="card cartas" style="width: 18rem;">
-        <img src=${element["image"]} class="carta " alt="jugador1">
+        <img src=${element["image"]} class="carta " alt="${element["name"]}">
         <div class="card-body">
           <h5 class="card-title">${element["name"]}</h5>
           <p class="card-text">${element["description"]}</p>
@@ -63,7 +63,7 @@ function crear_cartas(eventos_array) {
         </div>
         <div class="boton_precio card-body">
           <span>$ ${element["price"]} </span>
-          <a href="./details.html?id=${element["id"]}" class="btn btn-primary ">Ver mas</a>
+          <a href="./details.html?id=${element["_id"]}" class="btn btn-primary ">Ver mas</a>
         </div>
       </div>
       `;
